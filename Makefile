@@ -58,7 +58,7 @@ ifeq ($(D_ARCH),ARM64)
 endif
 
 ifeq ($(D_OS),MACOS)
-	CC = g++-11
+	CC = g++-14
 
 	ifeq ($(D_ARCH),ARM64)
 		CPU_FLAGS = -march=armv8.4-a
