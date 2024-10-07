@@ -2,6 +2,10 @@ all: satc satc_dump satc_merge sig_anch compactors download_kmc splash supervise
 
 dummy := $(shell git submodule update --init --recursive)
 
+LDFLAGS=$(pkg-config --libs zlib zstd)
+CPPFLAGS=$(pkg-config --cflags zlib zstd)
+
+
 SPLASH_LIBS_DIR = libs
 LIBS_DIR = . #/usr/local/lib
 INCLUDE_DIR= libs
