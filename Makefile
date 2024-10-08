@@ -53,7 +53,7 @@ endif
 
 CPU_FLAGS =
 STATIC_LFLAGS =
-PLATFORM_SPECIFIC_FLAGS =
+PLATFORM_SPECIFIC_FLAGS = -arch arm64
 
 #in some cases we can have different results on ARM
 #I guess this is exactly the same as here: https://bugs.mysql.com/bug.php?id=82760
